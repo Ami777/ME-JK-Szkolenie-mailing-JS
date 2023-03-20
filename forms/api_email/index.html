@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Rejestracja na kurs</h1>
+<form method="POST" action="https://jakubkrol.pl/backend/megak/post.php">
+    <div>
+        <label for="firstName">Imię</label>
+        <input type="text" id="firstName" name="firstName123">
+    </div>
+
+    <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div>
+        <label for="phoneNo">Nr tel</label>
+        <input type="tel" id="phoneNo" name="phoneNo">
+    </div>
+
+    <div>
+        <label for="bio">Notatka o sobie</label>
+        <textarea name="bio" id="bio"></textarea>
+    </div>
+
+    <div>
+        <label for="level">Twój poziom do wyboru</label>
+        <select name="level" id="level">
+            <option>Początkujący</option>
+            <option>Zaawansowany</option>
+            <option>Ekspert</option>
+        </select>
+    </div>
+
+    <button type="submit">Wyślij</button>
+</form>
+
+</body>
+</html>
