@@ -38,10 +38,14 @@
             background-color: white;
         }
 
-        .main-message > td {
-            width: 600px;
-            padding: 25px;
-            border-radius: 0 0 10px 10px;
+        .main-message-content {
+            width: 500px;
+            padding: 0 25px 25px 0;
+        }
+
+        .main-message-icons {
+            width: 100px;
+            text-align: center;
         }
 
         .logo-container {
@@ -80,6 +84,18 @@
             color: #9D9D9D;
         }
 
+        h1, h2, h3 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .last-row-left {
+            border-bottom-left-radius: 10px;
+        }
+
+        .last-row-right {
+            border-bottom-right-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +103,7 @@
 <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full-width">
     <!-- Logo -->
     <tr border="0">
-        <td border="0" width="600">
+        <td border="0" width="600" colspan="2">
             <div class="logo-container">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Test-Logo.svg/1280px-Test-Logo.svg.png"
                      alt="Nasza firma" title="Nasza firma" border="0" height="50" width="109">
@@ -97,7 +113,7 @@
 
     <!--  Top image  -->
     <tr border="0" class="top-image">
-        <td border="0" width="600" height="240">
+        <td border="0" width="600" height="240" colspan="2">
             <img src="https://i2-prod.cornwalllive.com/article3125105.ece/ALTERNATES/s615/1_Surfer.jpg"
                      alt="" title="" border="0" height="240" width="600">
         </td>
@@ -105,11 +121,21 @@
 
     <!--  Main message  -->
     <tr border="0" class="main-message">
-        <td border="0" width="600">
-            <p>Nasza treść...</p>
+        <td border="0" width="100" class="main-message-icons"></td>
+        <td border="0" width="500" class="main-message-content">
+            <h1>Nasza treść...</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis distinctio dolore earum, fuga
                 illum in labore laborum, modi nulla quae quos reiciendis repellendus sit tenetur? Iusto laudantium nemo
                 placeat.</p>
+        </td>
+    </tr>
+
+    <tr border="0" class="main-message">
+        <td border="0" width="100" class="main-message-icons" valign="top">
+            <img src="https://cdn-icons-png.flaticon.com/64/42/42321.png" alt="" title="">
+        </td>
+        <td border="0" width="500" class="main-message-content">
+            <h2>Nasza treść...</h2>
 
             <a href="https://wp.pl" target="_blank" title="Check our product" class="button-link">
                 <table border="0" cellpadding="0" cellspacing="0" class="button">
@@ -124,11 +150,34 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem molestiae pariatur possimus quod
                 sint unde vero. Beatae error mollitia nisi odit suscipit ut velit. Accusantium aperiam doloremque
                 dolorum tempora vel?</p>
-            <p>Nasza treść...</p>
         </td>
     </tr>
+
+    <tr border="0" class="main-message">
+        <td border="0" width="100" class="main-message-icons last-row-left" valign="top">
+            <img src="https://cdn-icons-png.flaticon.com/64/42/42321.png" alt="" title="">
+        </td>
+        <td border="0" width="500" class="main-message-content last-row-right">
+            <h2>Nasza treść...</h2>
+
+            <a href="https://wp.pl" target="_blank" title="Check our product" class="button-link">
+                <table border="0" cellpadding="0" cellspacing="0" class="button">
+                    <tr border="0">
+                        <td border="0">
+                            Call To Action
+                        </td>
+                    </tr>
+                </table>
+            </a>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem molestiae pariatur possimus quod
+                sint unde vero. Beatae error mollitia nisi odit suscipit ut velit. Accusantium aperiam doloremque
+                dolorum tempora vel?</p>
+        </td>
+    </tr>
+
     <tr border="0">
-        <td border="0" width="600" class="footer">
+        <td border="0" width="600" class="footer" colspan="2">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, consequatur culpa debitis dignissimos
                 expedita <a href="#" target="_blank" title="Cofnij subskrypcję">facere hic non porro</a>, qui quibusdam
